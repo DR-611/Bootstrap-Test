@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+	<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -95,7 +102,18 @@
            </div>
         </div>
     </footer>
-
+	<!-- 
+	jQuery first, then Popper.js, then Bootstrap JS. 
+	(done in order of dependency - bootstrap need jquery and popper.
+	This is at the bottom of the page because when loading page you want
+	CSS classes loaded immediately (they are at the top). The JS takes some
+	time and you don't want users to have to wait the entire time before seeing
+	something in the browser window.
+	-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	
 </body>
 
 </html>

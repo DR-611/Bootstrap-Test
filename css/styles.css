@@ -28,3 +28,14 @@
 	margin: 0px;
 	color: #0f0f0f;
 }
+
+body {
+	// give the navigation bar 50px to cover - this ensures that the navigation bar
+	//does not cover the topmost element in the page
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
+}
+
+.navbar-dark {
+	background-color: #512DA8;
+}

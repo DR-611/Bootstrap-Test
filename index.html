@@ -35,7 +35,7 @@
 					<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"> Contact</a></li>
 				</ul>
 				<span class="navbar-text">
-					<a data-toggle="modal" data-target="#loginModal">
+					<a id="lnkLogin">
 						<span class="fa fa-sign-in"></span> Login
 					</a>
 				</span>
@@ -93,8 +93,7 @@
                 </div>
 				<div class="col-12 col-sm-3 align-self-center">
 					<!-- data-html="true" means the tooltip can by styled using html -->
-					<a role="button" class="btn btn-block btn-lg btn-warning"
-						data-toggle="modal" data-target="#reservationModal" >
+					<a id="btnReserve" role="button" class="btn btn-block btn-lg btn-warning">
 						Reserve Table
 					</a>
 				</div>
@@ -353,6 +352,12 @@
 					$('#carouselButton').children('span').removeClass('fa-play');
 					$('#carouselButton').children('span').addClass('fa-pause');
 			    }
+			});
+			$('#lnkLogin').click(function() {
+				$('#loginModal').modal('toggle');
+			});
+			$('#btnReserve').click(function() {
+				$('#reservationModal').modal('toggle');
 			});
 		})
 	</script>
